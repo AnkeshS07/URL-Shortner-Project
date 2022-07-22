@@ -51,7 +51,7 @@ let createshortUrl = async function (req, res) {
     console.log(urlExists)
 
   if (urlExists) {
-    return res.status(409).send({
+    return res.status(200).send({
       status: true,
       data: urlExists,
     });
